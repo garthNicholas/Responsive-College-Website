@@ -1,0 +1,135 @@
+<html>
+<head>
+    <meta name ="viewport" content="width=device-width,initial-scale=1"> <!-- This is to make website more responsive -->
+    <title> University Website Design - Essy Tutorials </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>    
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>    <!-- This is the closing tag on the smaller screen - JavaScript -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>    <!-- This is the opening tag on the smaller screen -->
+    </nav>   
+    <h1> Our Certificate & Online Programs 2023 </h1>
+
+   
+
+</section>
+    
+<!  ---- blog page content ---- >
+    
+<section class="blog-content">
+    
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2> Our Certificate & Online Programs 2023 </h2>
+            <p>  Kinesiology </p>
+            <br>
+            <p>  Physiology </p>
+            <br>
+            <p>  Anatomy </p>
+            <br>
+            <p>  Bio-Sciences</p>
+            
+            
+            <div class="comment-box">
+                <h3> Leave a comment </h3>
+                
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder=" Your comment "></textarea>
+                    
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+            
+            
+        </div>
+        <div class="blog-right">
+            <h3> Post Categories </h3>
+            <div>
+                <span> Advanced Kinesiology</span>
+                <span> 301 </span>
+            </div>
+            <div>
+                <span> Advanced Physiology </span>
+                <span> 301 </span>
+            </div>
+            <div>
+                <span> Advanced Anatomy </span>
+                <span> 301 </span>
+            </div>
+            <div>
+                <span> Biomechanics </span>
+                <span> 301 </span>
+            </div>
+            
+        
+        </div>
+    </div>
+    
+    
+</section>   
+    
+    
+<!  ---- Footer ---- >
+    
+<section class="footer">
+    <h4> About Us </h4>
+    <p> This Test website was built using HTML, CSS and Javascript in an attempt to understand how to build a responsive webpage on both Desktop and smartphone </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <p> Made with <i class="fa fa-heart-o"></i> by Easy Tutorials and Garth </p>
+    </div>
+    
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- JavaScript  ---- This section is to create a responsive button for the opening/closing side menu icons on the smaller screen -->    
+    
+<script>     
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";   
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";   
+    }
+
+</script>
+    
+</body>        
+</html>
